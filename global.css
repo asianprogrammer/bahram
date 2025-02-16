@@ -37,6 +37,10 @@
     justify-content: center;
 }
 
+.F-d-c {
+    flex-direction: column;
+}
+
 .container {
     width: 90%;
     max-width: 1500px;
@@ -122,6 +126,14 @@
     margin-bottom: 15px;
 }
 
+.ML-15px {
+    margin-left: 35px;
+}
+
+.ML-15px- {
+    margin-left: -35px;
+}
+
 .link {
     color: auto;
     text-decoration: none;
@@ -153,4 +165,16 @@ button {
 .bg {
     color: #fff;
     background: #FF5480;
+}
+
+.input {
+    outline: none;
+    padding: 15px 25px;
+    background: #fff !important;
+    border: solid 1px #FF5480;
+    border-radius: 40px;
+}
+
+.L-input {
+    width: 340px !important;
 }
