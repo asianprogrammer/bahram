@@ -96,7 +96,7 @@ body {
     width: 100%;
     height: 250px;
     overflow: hidden;
-    background: red;
+    background: url("https://www.svgrepo.com/show/376180/retry.svg");
 }
 
 .card .cover img {
