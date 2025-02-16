@@ -127,11 +127,11 @@
 }
 
 .ML-15px {
-    margin-left: 35px;
+    margin-left: 50px;
 }
 
 .ML-15px- {
-    margin-left: -35px;
+    margin-left: -50px;
 }
 
 .link {
@@ -141,6 +141,10 @@
 
 .T-black {
     color: black;
+}
+
+.font {
+    font-family: "Poppins", serif;
 }
 
 button {
@@ -170,11 +174,21 @@ button {
 .input {
     outline: none;
     padding: 15px 25px;
-    background: #fff !important;
-    border: solid 1px #FF5480;
     border-radius: 40px;
+    border: solid 1px #fff;
+    background: #fff !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+input:focus,
+input:valid {
+    border: solid 1px #FF5480;
 }
 
 .L-input {
-    width: 340px !important;
+    width: 300px;
+}
+
+.subscribe {
+    text-align: center;
 }
