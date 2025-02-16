@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    top: 40px;
+    width: 100%;
+    z-index: 99999;
+    padding: 30px 0;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    transition: all .2s ease-in-out;
+    background: rgba(255, 255, 255, 0.116);
+}
+
+.nav.active::before {
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    z-index: -9999;
+    background: radial-gradient(rgba(0, 0, 0, 0.068) 0%, transparent 65%);
+}
+
+.nav.active {
+    top: 0px;
+    padding: 20px 0;
+    position: fixed;
+}
+
+.nave-list a {
+    color: #333;
+    margin: 0 5px;
+    padding: 9px 20px;
+    font-weight: bold;
+    border-radius: 11px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.nave-list a:hover {
+    color: #fff;
+    background: #FF5480;
+}
+
+.nave-list a.active {
+    color: #fff;
+    font-weight: normal;
+    background: #FF5480;
+}
+
+.card {
+    width: 100%;
+    cursor: pointer;
+    min-width: 300px;
+    max-width: 500px;
+    margin-bottom: 30px;
+    font-family: "Poppins", serif;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .post-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .post-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.card .cover {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: red;
+}
+
+.card .cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .title {
+    /* padding: 0 15px; */
+    margin: 15px 0px;
+}
+
+.card .p {
+    /* padding: 0 15px; */
+    color: #9B9B9B;
+    margin: 15px 0;
+}
