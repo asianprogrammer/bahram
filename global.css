@@ -130,3 +130,27 @@
 .T-black {
     color: black;
 }
+
+button {
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    background: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.outline {
+    color: #FF5480;
+    border: solid 1px #FF5480;
+}
+
+.outline:hover {
+    color: #fff;
+    background: #FF5480;
+}
+
+.bg {
+    color: #fff;
+    background: #FF5480;
+}
