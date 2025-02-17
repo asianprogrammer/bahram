@@ -7,3 +7,7 @@ window.addEventListener("scroll", function(){
         nav.classList.remove("active")
     }
 })
+
+document.getElementById("nav-icon").addEventListener("click", function() {
+    this.classList.toggle("open");
+});

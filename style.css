@@ -73,12 +73,86 @@ body {
 
 .post-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
 }
+
+#nav-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#nav-icon span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 50%;
+    background: #FF5480;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#nav-icon span:nth-child(odd) {
+    left: 0;
+    border-radius: 9999px 0 0 9999px;
+}
+
+#nav-icon span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9999px 9999px 0;
+}
+
+#nav-icon span:nth-child(1),
+#nav-icon span:nth-child(2) {
+    top: 5px;
+}
+
+#nav-icon span:nth-child(3),
+#nav-icon span:nth-child(4) {
+    top: 13px;
+}
+
+#nav-icon span:nth-child(5),
+#nav-icon span:nth-child(6) {
+    top: 21px;
+}
+
+#nav-icon.open span:nth-child(3) {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+#nav-icon.open span:nth-child(4) {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+#nav-icon.open span:nth-child(1),
+#nav-icon.open span:nth-child(2),
+#nav-icon.open span:nth-child(5),
+#nav-icon.open span:nth-child(6) {
+    left: 0;
+    width: 100%;
+    top: 13px;
+    transform-origin: center;
+}
+
+#nav-icon.open span:nth-child(1),
+#nav-icon.open span:nth-child(6) {
+    transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(2),
+#nav-icon.open span:nth-child(5) {
+    transform: rotate(-45deg);
+}
+
 
 @media (max-width: 1024px) {
     .post-container {
@@ -91,9 +165,22 @@ body {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+
     .L-input {
         width: auto !important;
         margin-left: 0 !important;
+    }
+
+    #nav-icon {
+        display: inline-block;
+    }
+
+    .nave-list {
+        display: none !important;
+    }
+
+    .search-icon  {
+        display: none;
     }
 }
 
