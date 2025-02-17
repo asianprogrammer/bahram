@@ -11,37 +11,58 @@
 <body>
 
         <!-- Navigation bar -->
-        <div class="nav flex F-center">
-            <div class="container flex F-y-center F-x-between">
-                <div class="logo pointer-none select-none">
-                    <img width="100%" src="../assets/logo.png" alt="" srcset="">
-                </div>
-                <div class="nave-list flex">
-                    <a href="/">
-                        <div>New</div>
-                    </a>
-                    <a href="#">
-                        <div>Popular</div>
-                    </a>
-                    <a href="#">
-                        <div>Reding List</div>
-                    </a>
-                    <a class="active href="/">
-                        <div>Topics</div>
-                    </a>
-                    <a href="#">
-                        <div>Subscribe</div>
-                    </a>
-                </div>
-        
+    <div class="nav flex F-center">
+        <div class="container flex F-y-center F-x-between">
+            <div class="logo pointer-none select-none">
+                <img width="100%" src="../assets/logo.png" alt="" srcset="">
+            </div>
+            <div class="nave-list flex">
+                <a class="active" href="#">
+                    <div>New</div>
+                </a>
+                <a href="#">
+                    <div>Popular</div>
+                </a>
+                <a href="#">
+                    <div>Reding List</div>
+                </a>
+                <a href="/topics">
+                    <div>Topics</div>
+                </a>
+                <a href="#">
+                    <div>Subscribe</div>
+                </a>
+            </div>
+
+
+            <div>
+                <form action="" method="get" class="search-bar flex F-center">
+                    <input required class="search input" type="search" name="search" placeholder="Search Blog Post">
+                    <button class="bg">Go</button>
+                </form>
+            </div>
+
+            <section class="flex F-x-between">
                 <div class="search-icon pointer">
                     <svg viewBox="0 0 24 24" width="24" height="24" color="#9a9a9a" fill="none">
                         <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
                     </svg>
                 </div>
-            </div>
+    
+                <!-- Mobile Nav Button -->
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+
         </div>
+    </div>
 
    <!-- Space for nave distance !NOTE Before adding navbar also pick this 3 line code too for space -->
     <div class="pointer-none select-none">
