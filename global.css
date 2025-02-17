@@ -180,6 +180,47 @@ button {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.search {
+    width: 80%;
+    max-width: 700px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    bottom: -100%;
+    position: fixed;
+    pointer-events: fill;
+    transition: bottom .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.search-bar.on {
+    bottom: 30px;
+    display: flex;
+}
+
+.search-bar.search {
+    top: -100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    height: 110vh;
+    display: flex;
+    max-width: 100%;
+    filter: blur(0px) !important;
+    position: fixed !important;
+    background: hsla(0, 0%, 100%, 0.938);
+}
+
+.search-bar.search input,
+.search-bar.search button  {
+    margin-top: -30%;
+}
+
 input:focus,
 input:valid {
     border: solid 1px #FF5480;
