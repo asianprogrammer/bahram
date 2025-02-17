@@ -22,6 +22,27 @@ body {
     background: rgba(255, 255, 255, 0.116);
 }
 
+.nav.small {
+    height: 100vh;
+    padding-top: 20px;
+    backdrop-filter: none;
+    background: #fff;
+    align-items: flex-start;
+}
+
+
+.nave-list.small {
+    top: 120px;
+    width: 90%;
+    opacity: 1;
+    position: absolute;
+    display: block !important;
+}
+
+.nave-list.small a {
+    display: block;
+}
+
 .nav.active::before {
     left: 0;
     bottom: 0;
@@ -175,12 +196,15 @@ body {
         display: inline-block;
     }
 
-    .nave-list {
-        display: none !important;
-    }
-
     .search-icon  {
         display: none;
+    }
+
+    .nave-list {
+        top: -120px;
+        opacity: 0;
+        position: absolute;
+        transition: top .3s ease-in;
     }
 }
 
