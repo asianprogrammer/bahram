@@ -19,6 +19,7 @@ document.getElementById("nav-icon").addEventListener("click", function() {
 
 document.querySelector(".search-icon").addEventListener("click", function(){
     searchBar.classList.add("search")
+    searchBar.firstElementChild.focus()
     document.getElementsByTagName('body')[0].classList.add("blur")
 })
 

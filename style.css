@@ -45,10 +45,10 @@ body {
 
 .nav.active::before {
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     content: '';
     width: 100%;
-    height: 5px;
+    height: 3px;
     position: absolute;
     z-index: -9999;
     background: radial-gradient(rgba(0, 0, 0, 0.068) 0%, transparent 65%);
@@ -212,6 +212,7 @@ body {
     width: 100%;
     height: 250px;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .card .cover img {

@@ -29,7 +29,7 @@
 }
 
 .F-x-start {
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -39,6 +39,10 @@
 
 .F-d-c {
     flex-direction: column;
+}
+
+.F-x-evenly {
+    justify-content: space-evenly;
 }
 
 .container {
@@ -93,6 +97,10 @@
     opacity: .5;
 }
 
+.grayscale {
+    filter: grayscale(1);
+}
+
 .gray {
     color: #9B9B9B;
 }
@@ -135,7 +143,7 @@
 }
 
 .link {
-    color: auto;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -145,6 +153,10 @@
 
 .font {
     font-family: "Poppins", serif;
+}
+
+.postinfo {
+    margin-top: 30px;
 }
 
 button {
@@ -232,4 +244,10 @@ input:valid {
 
 .subscribe {
     text-align: center;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background: url(./assets/p.png);
 }
