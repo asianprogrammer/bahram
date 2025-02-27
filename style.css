@@ -206,6 +206,21 @@ body {
         position: absolute;
         transition: top .3s ease-in;
     }
+
+    .share {
+        position: absolute !important;
+        display: flex;
+        height: auto !important;
+        left: -22px !important;
+        margin: 0 !important;
+        top: 135px !important;
+        flex-direction: row !important;
+    }
+    .share:nth-child(1) {
+        right: -20px !important;
+        left: auto !important;
+        position: absolute !important;
+    }
 }
 
 .card .cover {
