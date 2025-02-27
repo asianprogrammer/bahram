@@ -295,8 +295,6 @@ input:valid {
     border-radius: 50%;
 }
 
-.share a:hover div  {
-}
 
 .share a:hover div svg path {
     stroke: #00ccff !important;
